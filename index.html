@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mileston 5 Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Mileston 3 Dynamic Resume Builder</h1>
+        <form id="resumeForm" class="form-container">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="profile-upload">
+                    <label for="profilePicture">
+                        <i class="fas fa-camera" style="margin-right: 8px;"></i> Profile Picture
+                    </label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+                </div>
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+            </fieldset>
+
+            <!-- Education Section -->
+            <fieldset>
+                <legend>Education</legend>
+                <textarea id="education" rows="4" placeholder="Your education details"></textarea>
+            </fieldset>
+
+            <!-- Experience Section -->
+            <fieldset>
+                <legend>Experience</legend>
+                <textarea id="experience" rows="4" placeholder="Your work experience"></textarea>
+            </fieldset>
+
+            <!-- Skills Section -->
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" rows="4" placeholder="Your skills"></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Output Section -->
+        <div id="resumeOutput"></div>
+    </div>
+
+    <!-- Include jsPDF from CDN -->
+    <script src="script.js"></script>
+</body>
+</html>

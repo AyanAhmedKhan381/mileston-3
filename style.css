@@ -1,0 +1,175 @@
+
+/* Reset and Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Profile Picture */
+.profilePicture {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.profilePicture:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #007BFF, #00a8ff);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Form Container */
+.form-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+/* Fieldsets and Legends */
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Labels with Icon */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+label::before {
+    content: "★"; /* Icon placeholder */
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-right: 8px;
+}
+
+/* Input and Textarea */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(45deg, #007BFF, #00a8ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 6px 14px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(45deg, #0056b3, #007acc);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Resume Output */
+#resumeOutput {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+#resumeOutput h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+/* Light Hover Effect for Input Fields */
+input:hover, textarea:hover {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.15);
+}
+
+/* Smooth Transition */
+.container, .form-container, .button, .input, .textarea {
+    transition: all 0.3s ease-in-out;
+}
+
+
